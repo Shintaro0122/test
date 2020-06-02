@@ -37,6 +37,9 @@ DATABASES_DEFAULT_PASSWORD=''
 デプロイ
 ```
 # sh scripts/deploy.sh
+# set -o allexport
+# source systemd/env
 # python3 manage.py migrate
 # python3 manage.py createsuperuser
+# python3 manage.py collectstatic
 ```
