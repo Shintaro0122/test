@@ -90,6 +90,7 @@ DATABASES = {
         'USER': DATABASES_DEFAULT_USER,
         'PASSWORD': DATABASES_DEFAULT_PASSWORD,
         'OPTIONS': {
+            'init_command': "SET sql_mode='STRICT_TRANS_TABLES'",
             'ssl': {
                 'ca': os.path.join(BASE_DIR, 'config/certs/BaltimoreCyberTrustRoot.crt.pem')
             }
