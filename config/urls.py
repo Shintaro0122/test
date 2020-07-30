@@ -21,5 +21,6 @@ from django.urls import include, path
 urlpatterns = [
     path('admin/', admin.site.urls),
     path('polls/', include('polls.urls')),
-    path('', include('healthcheck.urls'))
+    path('mymap/', include('mymap.urls')),
+    path('', include('healthcheck.urls')),
 ] + static(settings.STATIC_URL, document_root=settings.STATIC_ROOT)
