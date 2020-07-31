@@ -33,6 +33,7 @@ ALLOWED_HOSTS = ['*']
 INSTALLED_APPS = [
     'polls.apps.PollsConfig',
     'mymap.apps.MymapConfig',
+    'mychannel.apps.MychannelConfig',
     'healthcheck.apps.HealthcheckConfig',
     'django.contrib.admin',
     'django.contrib.auth',

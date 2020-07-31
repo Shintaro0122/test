@@ -22,5 +22,6 @@ urlpatterns = [
     path('admin/', admin.site.urls),
     path('polls/', include('polls.urls')),
     path('mymap/', include('mymap.urls')),
+    path('mychannel/', include('mychannel.urls')),
     path('', include('healthcheck.urls')),
 ] + static(settings.STATIC_URL, document_root=settings.STATIC_ROOT)
